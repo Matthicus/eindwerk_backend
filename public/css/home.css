@@ -1,0 +1,113 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Boldonse&family=Cal+Sans&display=swap');
+
+
+* {
+    font-family: "Cal Sans", sans-serif;
+}
+
+body {
+    .title_container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        align-items: center;
+        font-family: "Cal Sans", sans-serif;
+
+        .input_container {
+            display: flex;
+            gap: 1rem;
+
+            input {
+                border: none;
+                background-color: rgb(247, 247, 247);
+                color: black;
+                padding: 1rem 1rem;
+                cursor: pointer;
+                border-radius: 5px;
+                font-size: 12px;
+
+            }
+
+        }
+
+
+
+        h1 {
+            font-size: 2rem;
+        }
+
+        .add {
+            border: none;
+            background-color: aquamarine;
+            padding: 1rem 2rem;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 1.2rem;
+
+            &:hover {
+                background-color: rgb(164, 255, 225);
+            }
+        }
+    }
+
+    .thought_container {
+        background-color: white;
+        margin-left: 2rem;
+        margin-top: 7rem;
+        border-radius: 5px;
+        grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
+        padding: 1rem;
+
+
+
+
+        article {
+            background-color: aquamarine;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            padding: 1.5rem;
+            font-family: "Cal Sans", sans-serif;
+            color: white;
+            margin-bottom: 2rem;
+            border-radius: 10px;
+
+            h2 {
+                font-size: 2rem;
+            }
+
+            .edit {
+                border: none;
+                background-color: rgb(247, 247, 247);
+                color: black;
+                padding: 1rem 1rem;
+                cursor: pointer;
+                border-radius: 5px;
+                font-size: 12px;
+                ;
+            }
+
+            .delete {
+                border: none;
+                background-color: rgb(255, 95, 95);
+                color: white;
+                padding: 1rem 1rem;
+                cursor: pointer;
+                border-radius: 5px;
+                font-size: 12px;
+            }
+
+            .buttons {
+                display: flex;
+                gap: 1rem;
+            }
+
+
+        }
+
+    }
+}

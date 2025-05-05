@@ -1,1 +1,3 @@
-import './bootstrap';
+import "./bootstrap";
+
+console.log("js is running");
